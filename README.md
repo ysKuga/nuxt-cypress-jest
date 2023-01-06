@@ -1,5 +1,22 @@
 # nuxt-cypress-jest
 
+Nuxt.js をセットアップして Cypress と Jest で型の問題が発生しないことを確認するだけのリポジトリです。
+
+Nuxt.js の初期設定により Jest を設定し、以下により TypeScript を設定
+
+[TypeScript を使用する](https://jestjs.io/ja/docs/getting-started#typescript-%E3%82%92%E4%BD%BF%E7%94%A8%E3%81%99%E3%82%8B)
+
+```bash
+yarn add -D @types/jest ts-jest
+```
+
+- `tsconfig.json` の `types` に `@types/jest` を追加
+
+Cypress 側は `cypress/tsconfig.json` の `types` に `cypress` を追加
+
+<details>
+<summary>Nuxt.js Build Setup</summary>
+
 ## Build Setup
 
 ```bash
@@ -66,3 +83,5 @@ More information about the usage of this directory in [the documentation](https:
 This directory contains your Vuex store files. Creating a file in this directory automatically activates Vuex.
 
 More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/store).
+
+</details>
