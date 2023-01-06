@@ -1,4 +1,7 @@
-export default {
+/** @type {import('@nuxt/types').NuxtOptions} */
+const options = {
+  srcDir: 'src',
+
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: 'nuxt-cypress-jest',
@@ -37,3 +40,5 @@ export default {
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {},
 }
+
+export default options
