@@ -1,4 +1,4 @@
-/** @type {import('@nuxt/types').NuxtOptions} */
+/** @type {Partial<import('@nuxt/types').NuxtOptions>} */
 const options = {
   srcDir: 'src',
 
